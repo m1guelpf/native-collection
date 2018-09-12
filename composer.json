@@ -1,0 +1,47 @@
+{
+    "name": "m1guelpf/native-collection",
+    "description": "Adding Collection functions to the PHP array scalar type",
+    "keywords": [
+        "m1guelpf",
+        "native-collection"
+    ],
+    "homepage": "https://github.com/spatie/:package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Piedrafita",
+            "email": "soy@miguelpiedrafita.com",
+            "homepage": "https://miguelpiedrafita.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "tightenco/collect": "^5.7"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "M1guelpf\\NativeCollection\\": "src"
+        },
+        "files": [
+            "src/index.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "M1guelpf\\NativeCollection\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
